@@ -349,20 +349,3 @@ Through this project, I gained hands-on experience in:
 
 ---
 
-## 👨‍💻 Developer
-
-**Your Name**
-
-Final Year B.Tech Student | Full Stack Developer
-
-Skills:
-`React.js` `Node.js` `Express.js` `MongoDB` `JavaScript` `REST APIs`
-
-LinkedIn: Your LinkedIn URL
-
-GitHub: Your GitHub URL
-
----
-
-### ⭐ If you like this project, consider giving it a star on GitHub!
-
