@@ -1,350 +1,368 @@
-# 🍔 FoodieHub
+# 🍔 FoodieHub - Full Stack Food Delivery Platform
 
-<div align="center">
+> A production-ready food ordering web application built with the MERN Stack, featuring secure authentication, online payments, cart management, and an admin dashboard.
 
-### 🚀 Full Stack Food Delivery Platform
+> *Order • Pay • Track • Deliver*
 
-*Order • Pay • Track • Deliver*
+![React](https://img.shields.io/badge/React-Frontend-blue)
+![Node.js](https://img.shields.io/badge/Node.js-Backend-green)
+![MongoDB](https://img.shields.io/badge/MongoDB-Database-brightgreen)
+![Stripe](https://img.shields.io/badge/Stripe-Payments-purple)
+![License](https://img.shields.io/badge/License-MIT-orange)
 
-<img src="./assets/logo.png" alt="FoodieHub Logo" width="180"/>
+---
 
-![React](https://img.shields.io/badge/React.js-Frontend-61DAFB?style=for-the-badge\&logo=react)
-![Node.js](https://img.shields.io/badge/Node.js-Backend-339933?style=for-the-badge\&logo=node.js)
-![MongoDB](https://img.shields.io/badge/MongoDB-Database-47A248?style=for-the-badge\&logo=mongodb)
-![Express](https://img.shields.io/badge/Express.js-API-black?style=for-the-badge\&logo=express)
-![Stripe](https://img.shields.io/badge/Stripe-Payments-635BFF?style=for-the-badge\&logo=stripe)
+## 📌 Project Overview
 
-### 🌐 Live Demo
+FoodieHub is a full-stack food delivery platform that enables customers to browse food items, place orders, make secure online payments, and track order status in real time.
 
-🔗 **[Visit Website](#)**
+The platform also includes an Admin Dashboard for managing food items, customer orders, and delivery status.
 
-### 📄 Resume Project Highlights
+This project demonstrates real-world software development concepts including:
 
-✅ Authentication & Authorization
-✅ RESTful APIs
-✅ Stripe Payment Gateway
+- Authentication & Authorization
+- REST API Development
+- Payment Gateway Integration
+- Database Management
+- State Management
+- Full Stack Deployment
+- CRUD Operations
+- Responsive UI Design
+
+---
+
+## 🚀 Live Features
+
+### 👤 User Side
+
+✅ Create Account & Login
+
+✅ Browse Food Menu
+
+✅ Search & Explore Food Items
+
+✅ Add/Remove Items from Cart
+
+✅ Secure Checkout Process
+
+✅ Stripe Payment Integration
+
+✅ Place Orders
+
+✅ Track Order Status
+
+✅ Responsive Design
+
+---
+
+### 🔑 Admin Side
+
 ✅ Admin Dashboard
-✅ Cart & Order Management
-✅ Responsive UI
-✅ MERN Stack Architecture
 
-</div>
+✅ Add New Food Items
 
----
+✅ Update Menu
 
-# 📖 About The Project
+✅ Delete Food Items
 
-FoodieHub is a modern full-stack food delivery application developed using the **MERN Stack**. Users can browse food items, manage carts, place orders, complete payments securely through Stripe, and track order status.
+✅ View Customer Orders
 
-The platform also includes an **Admin Dashboard** for managing food items, monitoring orders, and updating delivery statuses.
+✅ Update Order Status
 
-This project simulates a real-world food delivery ecosystem similar to Swiggy, Zomato, or Uber Eats.
+✅ Manage Platform Data
 
 ---
 
-# 🎯 Problem Statement
-
-Traditional food ordering systems often lack:
-
-* Secure Authentication
-* Real-Time Order Management
-* Online Payment Integration
-* Centralized Admin Controls
-
-FoodieHub solves these problems by providing a scalable and user-friendly platform for customers and administrators.
-
----
-
-# ✨ Core Features
-
-## 👤 Customer Module
-
-🔐 User Registration & Login
-
-🍽️ Browse Food Menu
-
-🔍 Search Food Items
-
-🛒 Add / Remove Items From Cart
-
-💳 Stripe Payment Integration
-
-📦 Place Orders
-
-🚚 Track Order Status
-
-📱 Mobile Responsive Design
-
----
-
-## 🛠️ Admin Module
-
-📋 Dashboard Analytics
-
-➕ Add Food Items
-
-✏️ Update Food Details
-
-❌ Delete Food Items
-
-📦 Manage Orders
-
-🔄 Update Delivery Status
-
-👥 Monitor User Activity
-
----
-
-# 🏗️ System Architecture
+## 🏗️ System Architecture
 
 ```text
-┌─────────────────┐
-│   React Client  │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│  Express APIs   │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Node.js Server  │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│ MongoDB Atlas   │
-└────────┬────────┘
-         │
-         ▼
-┌─────────────────┐
-│ Stripe Gateway  │
-└─────────────────┘
+React Frontend
+       │
+       ▼
+Express REST API
+       │
+       ▼
+Node.js Backend
+       │
+       ▼
+MongoDB Database
+       │
+       ▼
+Stripe Payment Gateway
 ```
 
 ---
 
-# 🛠️ Tech Stack
+## 🛠️ Tech Stack
 
-| Category        | Technologies                |
-| --------------- | --------------------------- |
-| Frontend        | React.js, Vite, CSS3, Axios |
-| Backend         | Node.js, Express.js         |
-| Database        | MongoDB Atlas               |
-| Authentication  | JWT, Bcrypt.js              |
-| Payment         | Stripe                      |
-| API Testing     | Postman                     |
-| Version Control | Git & GitHub                |
+### Frontend
 
----
+- React.js
+- React Router DOM
+- Axios
+- CSS3
+- Vite
 
-# 🚀 Key Technical Implementations
+### Backend
 
-### 🔒 Authentication
+- Node.js
+- Express.js
 
-* JWT Token-Based Authentication
-* Protected Routes
-* Password Hashing Using Bcrypt
-* Session Management
+### Database
 
-### 💳 Payment System
+- MongoDB
+- Mongoose
 
-* Stripe Checkout Integration
-* Secure Payment Verification
-* Order Confirmation Flow
+### Authentication
 
-### ⚡ Backend Development
+- JWT Authentication
+- Bcrypt Password Hashing
 
-* REST API Architecture
-* MVC Pattern
-* Middleware-Based Error Handling
-* Modular Code Structure
+### Payments
 
-### 🗄️ Database Design
+- Stripe Payment Gateway
 
-* User Collection
-* Food Collection
-* Cart Collection
-* Order Collection
+### Tools & Platforms
+
+- Git & GitHub
+- Postman
+- MongoDB Atlas
+- VS Code
 
 ---
 
-# 📂 Project Structure
+## ✨ Key Technical Highlights
+
+### Authentication System
+
+- JWT-based authentication
+- Password encryption using bcrypt
+- Protected routes
+- User session management
+
+### Payment Processing
+
+- Secure Stripe checkout integration
+- Payment verification
+- Order confirmation workflow
+
+### Database Design
+
+- User Management
+- Food Catalog
+- Cart Management
+- Order Tracking
+
+### API Development
+
+- RESTful API Architecture
+- Error Handling Middleware
+- Modular Route Structure
+- MVC Pattern
+
+---
+
+## 📂 Folder Structure
 
 ```bash
-FoodieHub
+FoodieHub/
 │
-├── frontend
-│   ├── src
-│   ├── components
-│   ├── pages
-│   └── assets
+├── frontend/
+│   ├── src/
+│   ├── components/
+│   ├── pages/
+│   └── assets/
 │
-├── backend
-│   ├── controllers
-│   ├── routes
-│   ├── middleware
-│   ├── models
-│   └── config
+├── backend/
+│   ├── controllers/
+│   ├── models/
+│   ├── middleware/
+│   ├── routes/
+│   └── config/
 │
-├── admin
-│   ├── components
-│   ├── pages
-│   └── assets
+├── admin/
+│   ├── src/
+│   ├── pages/
+│   └── components/
 │
 └── README.md
 ```
 
 ---
 
-# ⚙️ Installation
+## ⚙️ Installation & Setup
 
-## Clone Repository
+### Clone Repository
 
 ```bash
 git clone https://github.com/yourusername/foodiehub.git
-
 cd foodiehub
 ```
 
-## Install Packages
+### Install Dependencies
+
+#### Frontend
 
 ```bash
-# Frontend
 cd frontend
 npm install
+```
 
-# Backend
+#### Backend
+
+```bash
 cd backend
 npm install
+```
 
-# Admin
+#### Admin Panel
+
+```bash
 cd admin
 npm install
 ```
 
 ---
 
-# 🔑 Environment Variables
+## 🔐 Environment Variables
+
+Create a `.env` file inside the backend folder.
 
 ```env
 PORT=4000
 
-MONGO_URI=your_mongodb_uri
+MONGO_URI=your_mongodb_connection_string
 
 JWT_SECRET=your_secret_key
 
-STRIPE_SECRET_KEY=your_stripe_key
+STRIPE_SECRET_KEY=your_stripe_secret_key
 
 FRONTEND_URL=http://localhost:5173
 ```
 
 ---
 
-# ▶️ Run Locally
+## ▶️ Running the Project
+
+### Backend Server
 
 ```bash
-# Backend
 npm run server
+```
 
-# Frontend
+### Frontend
+
+```bash
 npm run dev
+```
 
-# Admin Dashboard
+### Admin Dashboard
+
+```bash
 npm run dev
 ```
 
 ---
 
-# 📸 Project Screenshots
+## 📸 Project Screenshots
 
-### 🏠 Home Page
+### Home Page
 
-<img src="./screenshots/home.png"/>
+(Add Screenshot)
 
-### 🍕 Food Menu
+### Food Menu
 
-<img src="./screenshots/menu.png"/>
+(Add Screenshot)
 
-### 🛒 Cart
+### Cart Page
 
-<img src="./screenshots/cart.png"/>
+(Add Screenshot)
 
-### 💳 Checkout
+### Payment Page
 
-<img src="./screenshots/payment.png"/>
+(Add Screenshot)
 
-### 🛠️ Admin Dashboard
+### Admin Dashboard
 
-<img src="./screenshots/admin.png"/>
-
----
-
-# 📊 Resume Worthy Achievements
-
-✅ Built a complete MERN stack application from scratch
-
-✅ Integrated Stripe Payment Gateway
-
-✅ Implemented JWT Authentication & Authorization
-
-✅ Developed 15+ REST API Endpoints
-
-✅ Followed MVC Architecture
-
-✅ Created Admin Dashboard for Order Management
-
-✅ Designed Responsive User Interface
+(Add Screenshot)
 
 ---
 
-# 🎓 What I Learned
+## 🔗 REST API Endpoints
 
-* Full Stack Development
-* REST API Design
-* MongoDB Data Modeling
-* Payment Gateway Integration
-* Authentication & Security
-* Deployment Workflow
-* Scalable Project Structure
+### User
+
+```http
+POST /api/user/register
+POST /api/user/login
+```
+
+### Food
+
+```http
+GET    /api/food/list
+POST   /api/food/add
+DELETE /api/food/remove
+```
+
+### Cart
+
+```http
+POST /api/cart/add
+POST /api/cart/remove
+GET  /api/cart/get
+```
+
+### Orders
+
+```http
+POST /api/order/place
+POST /api/order/verify
+GET  /api/order/list
+POST /api/order/status
+```
 
 ---
 
-# 🚀 Future Enhancements
+## 🎯 Learning Outcomes
 
-* Google Authentication
-* Real-Time Notifications
-* AI Food Recommendation System
-* Coupon & Discount Engine
-* Live Order Tracking
-* Progressive Web App (PWA)
+Through this project, I gained hands-on experience in:
+
+- Building scalable MERN applications
+- Implementing JWT authentication
+- Integrating Stripe payment gateway
+- Designing RESTful APIs
+- Managing MongoDB databases
+- Creating responsive user interfaces
+- Full Stack project architecture
 
 ---
 
-# 👨‍💻 Developer
+## 📈 Future Enhancements
 
-### Your Name
+- Google Authentication
+- Email Notifications
+- Real-Time Order Tracking
+- Coupon System
+- AI-Based Food Recommendations
+- Progressive Web App (PWA)
+
+---
+
+## 👨‍💻 Developer
+
+**Your Name**
 
 Final Year B.Tech Student | Full Stack Developer
 
-**Skills**
+Skills:
+`React.js` `Node.js` `Express.js` `MongoDB` `JavaScript` `REST APIs`
 
-`React.js` `Node.js` `Express.js` `MongoDB`
-`JavaScript` `REST APIs` `Git` `Stripe`
+LinkedIn: Your LinkedIn URL
 
-📧 [yourmail@example.com](mailto:yourmail@example.com)
-
-🔗 LinkedIn: https://linkedin.com/in/yourprofile
-
-💻 GitHub: https://github.com/yourusername
+GitHub: Your GitHub URL
 
 ---
 
-<div align="center">
+### ⭐ If you like this project, consider giving it a star on GitHub!
 
-### ⭐ If you found this project useful, please give it a star!
-
-Made with ❤️ using the MERN Stack
-
-</div>
