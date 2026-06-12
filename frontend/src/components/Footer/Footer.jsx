@@ -7,12 +7,16 @@ const Footer = () => {
     <div className='footer' id='footer'>
         <div className="footer-contents">
             <div className="footer-contents-left">
-            <img src={assets.logo} alt=""/>
-            <p>Lorem ipsum is simple dummy text of the printing and typesetting industry.Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
+            <img src={assets.logo} alt="FoodieHub Logo" />
+            <p>FoodieHub brings your favorite meals right to your doorstep. 
+                Discover top-rated restaurants, explore diverse cuisines, and enjoy 
+                fast, reliable delivery. We are committed to making every meal 
+                convenient, delicious, and memorable.
+                </p>
             <div className="footer-social-icons">
-                <img src={assets.facebook_icon} alt=""/>
-                <img src={assets.twitter_icon} alt=""/>
-                <img src={assets.linkedin_icon} alt=""/>
+                <img src={assets.facebook_icon} alt="Facebook"/>
+                <img src={assets.twitter_icon} alt="Twitter"/>
+                <img src={assets.linkedin_icon} alt="LinkedIn"/>
             </div>
 
         </div>
