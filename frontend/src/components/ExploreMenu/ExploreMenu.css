@@ -20,6 +20,7 @@
     text-align: center;
     margin: 20px 0px;
     overflow-x: scroll;
+   
 
 }
 .explore-menu-list::-webkit-scrollbar{
@@ -37,6 +38,7 @@
     color: #747474;
     font-size: max(1.4vw, 16px);
     cursor: pointer;
+    flex-shrink: 0;
 }
 .explore-menu hr{
     margin: 10px 0px;
@@ -49,3 +51,43 @@
     padding: 2px;
     border-radius: 50%;
 }
+
+@media (max-width: 1050px) {
+
+    .explore-menu-text{
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .explore-menu-list{
+        gap: 20px;
+        justify-content: flex-start;
+    }
+
+    .explore-menu-list-item{
+        min-width: 90px;
+        flex-shrink: 0;
+    }
+
+    .explore-menu-list-item p{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+@media (max-width: 768px){
+
+    .explore-menu-list{
+        gap: 15px;
+    }
+
+    .explore-menu-list-item img{
+        width: 75px;
+        height: 75px;
+    }
+
+    .explore-menu-list-item p{
+        font-size: 14px;
+        white-space: nowrap;
+    }
+}
+

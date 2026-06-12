@@ -33,7 +33,7 @@ const Footer = () => {
         <div className="footer-contents-right">
             <h2>GET IN TOUCH</h2>
             <ul>
-                <li>+1-212-456-7890</li>
+                <li>+91 98765 43210</li>
                 <li>contact@foodiehub.com</li>
                 
 
@@ -42,7 +42,7 @@ const Footer = () => {
             </div>
       </div>
          <hr />
-         <p className='copyright'>Copyright © 2024 FoodieHub. All rights reserved.</p>
+         <p className='copyright'>Copyright © 2026 FoodieHub. All rights reserved.</p>
         </div>
 
   )

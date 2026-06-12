@@ -50,3 +50,14 @@
 .footer-contents-left p{
     margin: 0;
 }
+
+@media (max-width: 750px){
+    .footer-contents{
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+    .footer-copyright{
+        text-align: center;
+    }
+}
