@@ -4,7 +4,8 @@ import { StoreContext } from '../../context/StoreContext'
 
 const Cart = () => {
 
-  const {cartItems, food_list, removeFromCart} = useContext(StoreContext);
+  const {cartItems, food_list, removeFromCart, getTotalCartAmount} = useContext(StoreContext);
+  const totalAmount = getTotalCartAmount();
 
   return (
     <div className='cart'>
@@ -49,21 +50,25 @@ const Cart = () => {
 
         <div className="cart-total-details">
           <p>Subtotal</p>
-          <p>{0}</p>
+          <p>₹{getTotalCartAmount()}</p>
         </div>
 
-        <hr/>
+        {totalAmount > 0 && (
+          <>
+            <hr/>
 
-        <div className="cart-total-details">
-          <p>Delivery Fee</p>
-          <p>{2}</p>
-        </div>
+            <div className="cart-total-details">
+              <p>Delivery Fee</p>
+              <p>₹{12}</p>
+            </div>
+          </>
+        )}
 
         <hr/>
 
         <div className="cart-total-details">
           <b>Total</b>
-          <b>{0}</b>
+          <b>₹{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 2}</b>
         </div>
 
         <button>Proceed to Checkout</button>
