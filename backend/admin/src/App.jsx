@@ -3,9 +3,9 @@ import Navbar from './components/Navbar/Navbar'
 import Sidebar from './components/Sidebar/Sidebar'
 import {Routes, Route} from 'react-router-dom'
 
-import Add from './pages/Add/Add';
-import List from './pages/List/List';
-import Orders from './pages/Orders/Orders';
+import Add from './Pages/Add/Add';
+import List from './Pages/List/List';
+import Orders from './Pages/Orders/Orders';
 
 const App = () => {
   return (
