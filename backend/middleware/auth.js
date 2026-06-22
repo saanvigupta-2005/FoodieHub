@@ -1,5 +1,5 @@
-import { JsonWebTokenError } from "jsonwebtoken";
-import jwt from JsonWebTokenError
+import jwt from "jsonwebtoken";
+
 
 const authMiddleware = async(req,res,next)=>{
     const {token} = req.headers;
