@@ -6,7 +6,7 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 //placing user order for frontend
 const placeOrder = async (req,res)=>{
-    const frontend_url = "http://localhost:5173";
+    const frontend_url = "http://localhost:5174";
 
     try{
         const newOrder = new orderModel({
@@ -40,7 +40,7 @@ const placeOrder = async (req,res)=>{
         })
         const session =await stripe.checkout.sessions.create({
             line_items:line_items,
-            node:"payment",
+            mode:"payment",
             success_url:`${frontend_url}/verify?success=true&orderId=${newOrder._id}`,
             cancel_url:`${frontend_url}/verify?success=false&orderId=${newOrder._id}`,
 

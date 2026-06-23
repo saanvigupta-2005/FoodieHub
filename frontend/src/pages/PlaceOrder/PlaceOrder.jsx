@@ -1,6 +1,10 @@
 import React, { useContext ,useEffect,useState} from 'react'
 import './PlaceOrder.css'
 import { StoreContext } from '../../context/StoreContext'
+import { useNavigate } from 'react-router-dom'
+import axios from "axios";
+
+
 const PlaceOrder = () => {
   const {getTotalCartAmount,token,food_list,cartItems,url}=useContext(StoreContext)
   const totalAmount = getTotalCartAmount();
@@ -69,7 +73,7 @@ const PlaceOrder = () => {
         <p className='title'>Delivery Information</p>
         <div className='multi-fields'>
           <input required name='firstName' onChange={onChangeHandler} value={data.firstName} type='text' placeholder='First Name' />
-          <input  name='lastName' onChange={onChangeHandler} value={data.lasttName} type='text' placeholder='Last Name' />
+          <input  name='lastName' onChange={onChangeHandler} value={data.lastName} type='text' placeholder='Last Name' />
         </div>
         <input required name='email' onChange={onChangeHandler} value={data.email} type='text' placeholder='Email Address' />
         <input required name='street' onChange={onChangeHandler} value={data.street} type='text' placeholder='Street' />
@@ -78,7 +82,7 @@ const PlaceOrder = () => {
           <input required name='state' onChange={onChangeHandler} value={data.state} type='text' placeholder='State' />
         </div>
         <div className='multi-fields'>
-          <input required name='zipcose' onChange={onChangeHandler} value={data.zipcode} type='text' placeholder='Zip Code' />
+          <input required name='zipcode' onChange={onChangeHandler} value={data.zipcode} type='text' placeholder='Zip Code' />
           <input required name='country' onChange={onChangeHandler} value={data.country} type='text' placeholder='Country' />
         </div>
         <input required name='phone' onChange={onChangeHandler} value={data.phone} type='text' placeholder='Phone' />
