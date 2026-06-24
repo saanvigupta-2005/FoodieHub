@@ -6,14 +6,17 @@ const stripe = new Stripe(process.env.STRIPE_SECRET_KEY)
 
 //placing user order for frontend
 const placeOrder = async (req,res)=>{
-    const frontend_url = "http://localhost:5174";
+    const frontend_url = "http://localhost:5173";
 
     try{
         const newOrder = new orderModel({
             userId:req.body.userId,
             items:req.body.items,
-            amount:req.body.amount
+            amount:req.body.amount,
+            address:req.body.address, 
         })
+        const subtotal = req.body.amount / 1.075;
+        const deliveryFee = Math.round(subtotal * 0.075);
         await newOrder.save();
         await userModel.findByIdAndUpdate(req.body.userId,{cartData:{}});
         
@@ -23,7 +26,7 @@ const placeOrder = async (req,res)=>{
                 product_data:{
                     name:item.name
                 },
-                unit_amount:item.price*100
+                unit_amount:item.price * 100
             },
             quantity:item.quantity
 
@@ -34,7 +37,7 @@ const placeOrder = async (req,res)=>{
                 product_data:{
                     name:"Delivery Charges"
                 },
-                unit_amount:200
+                unit_amount:deliveryFee * 100
             },
             quantity:1
         })

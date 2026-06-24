@@ -1,4 +1,4 @@
-import React, { useState, useContext } from 'react'
+import React, { useState, useContext,useEffect } from 'react'
 import './Navbar.css'
 import {assets} from '../../assets/assets'
 import { Link, useNavigate } from 'react-router-dom'
@@ -15,6 +15,28 @@ const Navbar = ({ setShowLogin }) => {
 
 
      }
+     
+     useEffect(() => {
+        window.gtranslateSettings = {
+            default_language: "en",
+            detect_browser_language: true,
+            wrapper_selector: ".gtranslate_wrapper"
+        };
+
+        const script = document.createElement("script");
+        script.src = "https://cdn.gtranslate.net/widgets/latest/ps.js";
+        script.async = true;
+
+        script.onload = () => {
+            console.log("GTranslate loaded");
+        };
+
+        script.onerror = () => {
+            console.log("Failed to load GTranslate");
+        };
+
+        document.body.appendChild(script);
+        }, []);
 
   return (
     <div className='navbar'>

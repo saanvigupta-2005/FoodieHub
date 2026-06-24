@@ -36,15 +36,16 @@ const PlaceOrder = () => {
     let orderItems = [];
     food_list.map((item)=>{
       if(cartItems[item._id]>0){
-        let itemInfo = item;
-        itemInfo["quantity"]=cartItems[item._id]
-        orderItems.push(itemInfo);
+        orderItems.push({
+          ...item,
+          quantity: cartItems[item._id]
+        });
       }
     })
     let orderData = {
       address:data,
       items:orderItems,
-      amount:getTotalCartAmount()+12
+      amount:getTotalCartAmount()*1.075
     }
     let response = await axios.post(url+"/api/order/place",orderData,{headers:{token}})
     if (response.data.success){
@@ -103,7 +104,7 @@ const PlaceOrder = () => {
 
             <div className="cart-total-details">
               <p>Delivery Fee</p>
-              <p>₹{12}</p>
+              <p>₹{getTotalCartAmount()*0.075}</p>
             </div>
           </>
         )}
@@ -112,7 +113,7 @@ const PlaceOrder = () => {
 
         <div className="cart-total-details">
           <b>Total</b>
-          <b>₹{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount() + 12}</b>
+          <b>₹{getTotalCartAmount() === 0 ? 0 : getTotalCartAmount()*1.075}</b>
         </div>
 
         <button type='submit'>Proceed to Payment</button>
