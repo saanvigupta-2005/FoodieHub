@@ -4,11 +4,14 @@
   "description": "",
   "license": "ISC",
   "author": "",
-  
   "main": "server.js",
   "type": "module",
   "scripts": {
+    "start": "node server.js",
     "server": "nodemon server.js"
+  },
+  "engines": {
+    "node": "18.x"
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
