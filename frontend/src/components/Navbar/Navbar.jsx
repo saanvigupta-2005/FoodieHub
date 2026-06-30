@@ -4,6 +4,8 @@ import {assets} from '../../assets/assets'
 import { Link, useNavigate } from 'react-router-dom'
 import { StoreContext } from '../../context/StoreContext'
 
+
+
 const Navbar = ({ setShowLogin }) => {
      const[menu,setMenu]= useState("menu");
      const{getTotalCartAmount,token,setToken}= useContext(StoreContext);
@@ -49,7 +51,7 @@ const Navbar = ({ setShowLogin }) => {
         </ul>
         <div className="navbar-right">
             <div className="gtranslate_wrapper"></div>
-            <img src={assets.search_icon} alt="" />
+            
             <div className="navbar-search-icon">
                <Link to='/cart'><img src={assets.basket_icon} alt="" /></Link>
                 <div className={getTotalCartAmount()===0?"":"dot"}></div>

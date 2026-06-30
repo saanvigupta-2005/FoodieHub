@@ -147,3 +147,11 @@
     display: flex;
     align-items: center;
 }
+
+.theme-btn{
+    border:none;
+    background:none;
+    font-size:25px;
+    cursor:pointer;
+}
+
